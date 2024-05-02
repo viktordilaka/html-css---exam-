@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="exam.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="nav-bar">
+      <ol>
+        <li class="logo"><a href="#home">VD</a></li>
+        <li class="introduction"><a href="#introduction">Introduction</a></li>
+        <!-- drop down start  -->
+        <div class="dropdown">
+          <li class="projects">
+            <!-- TUk smenih klasyt na butona -->
+            <a href="#projects" class="dropbtn">Projects</a>
+          </li>
+          <div class="dropdown-content">
+            <a href="#project1">Table </a>
+            <a href="#project2">M-gallery </a>
+            <a href="#project3">Form</a>
+          </div>
+        </div>
+        <!-- drop down end -->
+
+        <li class="contact"><a href="#contact">Contact</a></li>
+        <!-- Github-svg -->
+        <li class="git"></li>
+      </ol>
+    </nav>
+    <!-- First Section -->
+    <h1 id="home">HTML Exam: Create a Portfolio Website</h1>
+    <h2 id="introduction">Introduction</h2>
+    <div class="section1">
+      <img class="photo" src="600 px.JPG" />
+      <p class="introduction">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam in quas
+        delectus dolore odio ipsam fugit minus voluptas exercitationem totam
+        praesentium mollitia unde, corrupti nemo a tempora sunt. Tenetur placeat
+        ex explicabo ipsa ducimus, nam eius in. Harum numquam laboriosam dolores
+        omnis! Est voluptates sapiente mollitia temporibus blanditiis ratione
+        doloribus!
+      </p>
+    </div>
+    <!-- Second Section  -->
+    <h2 id="projects">Projects</h2>
+    <div class="section2">
+      <h3 id="project1">Table</h3>
+      <div class="project1">
+        <img class="photo-project" src="table .jpg" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+          assumenda saepe ullam architecto eligendi officiis voluptate deserunt
+          nisi reprehenderit culpa eum nihil aut exercitationem ab nemo. Sequi
+          mollitia fugit perspiciatis quo cupiditate officiis at, saepe maxime
+          maiores voluptatibus facilis numquam exercitationem officia ea amet
+          incidunt error quidem aperiam architecto. Animi.
+        </p>
+        <a href="https://www.google.com/">link</a>
+      </div>
+      <h3 id="project2">Masonry gallery</h3>
+      <div class="project2">
+        <img class="photo-project" src="grid-gallery.jpg" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+          assumenda saepe ullam architecto eligendi officiis voluptate deserunt
+          nisi reprehenderit culpa eum nihil aut exercitationem ab nemo. Sequi
+          mollitia fugit perspiciatis quo cupiditate officiis at, saepe maxime
+          maiores voluptatibus facilis numquam exercitationem officia ea amet
+          incidunt error quidem aperiam architecto. Animi.
+        </p>
+        <a href="https://www.google.com/">link</a>
+      </div>
+      <h3 id="project3">Form</h3>
+      <div class="project3">
+        <img class="photo-project" src="form.jpg" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
+          assumenda saepe ullam architecto eligendi officiis voluptate deserunt
+          nisi reprehenderit culpa eum nihil aut exercitationem ab nemo. Sequi
+          mollitia fugit perspiciatis quo cupiditate officiis at, saepe maxime
+          maiores voluptatibus facilis numquam exercitationem officia ea amet
+          incidunt error quidem aperiam architecto. Animi.
+        </p>
+        <a href="https://www.google.com/">link</a>
+      </div>
+    </div>
+    <br />
+    <!--  Third Section -->
+    <h2 id="contact">Contact me</h2>
+    <div class="section3">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email Address:</label
+        ><input type="email" id="email" name="email" required />
+        <label for="enquiry">Type of enquiry:</label
+        ><select id="enquiry" name="enquiry">
+          <option value="freelancer">Freelancer</option>
+          <option value="looking for a job">Looking for a job</option>
+          <option value="student">Student</option>
+        </select>
+        <label for="message">Your message:</label
+        ><textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

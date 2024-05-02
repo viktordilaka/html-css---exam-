@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin-top: 30px;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10%;
+}
+/* var(--scroll-padding, 50px) */
+/* Navigation bar */
+
+ol {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  border: dotted 2px red;
+  /* padding: 1em; */
+  position: relative;
+}
+
+h1,
+h2 {
+  border: solid 2px black;
+  text-align: center;
+  padding-top: 1em;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 5em;
+  /* bottom-margin */
+}
+h2 {
+  margin-bottom: 0.5em;
+}
+h3 {
+  text-align: center;
+  padding: 1em 0;
+}
+/* Navigation-bar  */
+.nav-bar {
+  border: solid 2px black;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+
+  /*  test */
+  /* overflow: hidden; */
+}
+/*Logo*/
+/* .logo {
+  position: absolute;
+  font-size: 3em;
+  width: 100vw;
+  text-align: center;
+  border: solid 2px black; cursor: pointer;
+} */
+/* The rest of the navigation elements */
+.introduction,
+.projects,
+.contact,
+.git {
+  padding: 1em;
+  margin-left: 1em;
+  border: solid 2px black;
+  cursor: pointer;
+}
+
+/* li {
+  flex: auto;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  border: solid 2px black;
+} */
+
+.photo {
+  width: 12em;
+  margin: 0 3em;
+}
+/* margin: 10px 15px 10px 8px; top | right | bottom | left */
+/* Maybe it is going to be better to use padding for My image to create space because it is in one container with the text and use margin to seperate it from the section  */
+.section1 {
+  /* bottom-margin  */
+
+  margin-bottom: 3em;
+  /* margin: 3em 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black;
+}
+.photo-project {
+  width: 30em;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.project1,
+.project2,
+.project3 {
+  display: flex;
+  border: 2px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  height: 100vh;
+}
+
+/*Drop-down button */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 16px;
+  text-decoration: none;
+  background-color: red;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
