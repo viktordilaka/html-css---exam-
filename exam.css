@@ -3,36 +3,25 @@
   padding: 0;
 }
 body {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 html {
-  font-size: 15px;
   scroll-behavior: smooth;
-  scroll-padding-top: 10%;
-}
-/* var(--scroll-padding, 50px) */
-/* Navigation bar */
-
-ol {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-  border: dotted 2px red;
-  /* padding: 1em; */
-  position: relative;
+  scroll-padding-top: 25%;
+  scro
 }
 
 h1,
 h2 {
   border: solid 2px black;
   text-align: center;
-  padding-top: 1em;
+  /* padding-top: 1em; */
 }
 h1 {
   text-align: center;
-  margin-bottom: 2em;
-  margin-top: 5em;
+  margin-bottom: 1em;
+  margin-top: 3em;
   /* bottom-margin */
 }
 h2 {
@@ -44,50 +33,83 @@ h3 {
 }
 /* Navigation-bar  */
 .nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   border: solid 2px black;
   position: fixed;
   top: 0;
   width: 100vw;
-  display: flex;
-  justify-content: flex-end;
+  background-color: white;
 
   /*  test */
   /* overflow: hidden; */
 }
 /*Logo*/
-/* .logo {
+.logo {
   position: absolute;
-  font-size: 3em;
+  font-size: 2.5em;
   width: 100vw;
   text-align: center;
-  border: solid 2px black; cursor: pointer;
-} */
-/* The rest of the navigation elements */
-.introduction,
-.projects,
-.contact,
-.git {
-  padding: 1em;
+  border: solid 2px red;
+  cursor: pointer;
+  z-index: -1;
+  margin: auto 0;
+}
+a {
+  text-decoration: none;
   margin-left: 1em;
-  border: solid 2px black;
+  padding: 10px 16px;
   cursor: pointer;
 }
 
-/* li {
-  flex: auto;
-  padding: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 1em;
-  border: solid 2px black;
-} */
+/*Drop-down button */
+.drop-down {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #4caf50;
+  margin-left: 1em;
+  border: none;
+  cursor: pointer;
+  width: inherit;
 
+  align-self: center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  text-decoration: none;
+  background-color: red;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 0;
+  text-align: center;
+}
+
+.drop-down:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The rest of the navigation elements */
+
+.git {
+  margin-right: 5em;
+  padding: 1em 1em 1em 0;
+}
+
+/* Section-1 */
 .photo {
   width: 12em;
   margin: 0 3em;
 }
-/* margin: 10px 15px 10px 8px; top | right | bottom | left */
-/* Maybe it is going to be better to use padding for My image to create space because it is in one container with the text and use margin to seperate it from the section  */
 .section1 {
   /* bottom-margin  */
 
@@ -98,15 +120,18 @@ h3 {
   align-items: center;
   border: solid 2px black;
 }
-.photo-project {
-  width: 30em;
-}
 
+/* Section-2 */
 .section2 {
   display: flex;
   flex-direction: column;
 }
-
+.photo-project {
+  width: 30em;
+  background-color: red;
+  padding: 1em;
+}
+/* Flexbox for projects - row*/
 .project1,
 .project2,
 .project3 {
@@ -114,6 +139,7 @@ h3 {
   border: 2px solid black;
 }
 
+/* Section-3 */
 form {
   display: flex;
   flex-direction: column;
@@ -121,35 +147,4 @@ form {
   justify-content: center;
   border: 2px solid black;
   height: 100vh;
-}
-
-/*Drop-down button */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropbtn {
-  background-color: #4caf50;
-  color: white;
-  font-size: 16px;
-  border: none;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  padding: 16px;
-  text-decoration: none;
-  background-color: red;
-  z-index: 1;
-}
-.dropdown-content a {
-  display: block;
-  text-decoration: none;
-  padding: 0.5em 0;
-  text-align: center;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
